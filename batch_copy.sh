@@ -1,10 +1,10 @@
 #!/bin/bash 
 
 #base source, date  and target location, 
-SRC="/corral-tacc/projects/Traffic-Camera-Video/Recordings/Nov/Rund/"
-LOC="LAMAR_RUNDBERG"
+SRC="/corral-tacc/projects/Traffic-Camera-Video/Recordings/Sep/Anderson/"
+LOC="ANDERSON_BURNET"
 YMD=$1 #"20180830"
-TAR="/work/03076/rhuang/maverick/CTR/LAMAR_RUNDBERG/$YMD"
+TAR="/work/03076/rhuang/stampede2/video_processing/ANDERSON_BURNET/$YMD"
 
 #hours to be copied.
 BEG=$2

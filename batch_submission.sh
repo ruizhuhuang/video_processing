@@ -1,9 +1,10 @@
 #!/bin/bash 
+# vidio labeling using KNL or SKX on stampede2 
 
-SRC="/work/03076/rhuang/maverick/CTR/LAMAR_RUNDBERG/20190106/"
-TAR="/work/03076/rhuang/maverick/CTR/LAMAR_RUNDBERG/out/20190106/"
+SRC="/work/03076/rhuang/stampede2/video_processing/ANDERSON_BURNET/20190217/"
+TAR="/work/03076/rhuang/stampede2/video_processing/ANDERSON_BURNET/out/20190217/"
 BEG=1
-END=48
+END=56
 SIZE=3
 
 

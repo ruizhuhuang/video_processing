@@ -8,10 +8,10 @@
 
 #SBATCH -J VideoLT              # Job name
 #SBATCH -o myjob.%j.out       # Name of stdout output file (%j expands to jobId)
-#SBATCH -p gpu                # Queue name
+#SBATCH -p normal                # Queue name
 #SBATCH -N 1                  # Total number of nodes requested (20 cores/node)
 #SBATCH -n 1                 # Total number of mpi tasks requested
-#SBATCH -t 24:00:00           # Run time (hh:mm:ss) - 1.5 hours
+#SBATCH -t 48:00:00           # Run time (hh:mm:ss) - 1.5 hours
 
 #SBATCH -A Traffic-Camera-Video      # <-- Allocation name to charge job against
 
@@ -20,9 +20,9 @@
 #ln -s /work/00410/huang/maverick/yolo/latest_yolo/darknet_dbg_0/cfg .
 #ln -s /work/00410/huang/maverick/yolo/latest_yolo/darknet_dbg_0/data .
 #ln -s /work/00410/huang/maverick/yolo/yolo.weights .
-module load cuda cudnn
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/work/00410/huang/maverick/opencv3.1.0/lib
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/work/00410/huang/maverick/yolo/ffmpeg-3.3_build/lib
+#module load cuda cudnn
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/work/00410/huang/stampede2/tools/ffmpeg-3.3/lib:/work/00410/huang/stampede2/tools/opencv3.3.0/lib
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/work/00410/huang/maverick/yolo/ffmpeg-3.3_build/lib
 
 
 #../run/run.sh /work/00791/xwj/CTR/videos/July/0720 /work/00791/xwj/CTR/videos/July/out 1 4
